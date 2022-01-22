@@ -10,6 +10,15 @@ type Point = {
 	x: number;
 	y: number;
 };
+type Candle = {
+	date: Date;
+	open: number;
+	high: number;
+	low: number;
+	close: number;
+	volume?: number;
+	trade_count?: number;
+};
 type AxisProps = {
 	horizontal: boolean;
 	origin: Point;
