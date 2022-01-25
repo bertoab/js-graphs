@@ -37,7 +37,6 @@ var TICKLENGTH = 15;
 var TICKCOLOR = "black";
 
 
-var FLIPPED = false;
 
 export function drawHorizontalAxis(rightToLeft: boolean, length: number, max: number, origin: Point) { //TODO: styling params
 	
