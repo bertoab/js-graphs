@@ -119,7 +119,7 @@ export function drawVerticalAxis(topToBottom: boolean, length: number, max: numb
 	}
 	// Return 'AxisProps'
 	return {
-		horizontal: true,
+		horizontal: false,
 		origin: origin,
 		pixelsPerValue : length / max,
 		width: WIDTH
