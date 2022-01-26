@@ -47,11 +47,6 @@ export function drawHorizontalAxis(rightToLeft: boolean, length: number, max: nu
 	ctx.strokeStyle = STROKECOLOR;
 
 	// Horizontal
-	// ctx.beginPath();
-	// ctx.moveTo(origin.x, origin.y);
-	// ctx.lineTo(origin.x + length, origin.y);
-	// ctx.closePath();
-	// ctx.stroke();
 	strokeLine(
 		createPoint(origin.x, origin.y), 
 		createPoint(origin.x + length, origin.y)
@@ -65,11 +60,6 @@ export function drawHorizontalAxis(rightToLeft: boolean, length: number, max: nu
 	
 	let intervalSpacing = length / INTERVALS;
 	for (let i = 1; i <= INTERVALS; i++) {
-		// ctx.beginPath();
-		// ctx.moveTo(origin.x + intervalSpacing * i, origin.y + TICKLENGTH / 2);	
-		// ctx.lineTo(origin.x + intervalSpacing * i, origin.y - TICKLENGTH / 2);
-		// ctx.closePath();
-		// ctx.stroke();
 		strokeLine(
 			createPoint(origin.x + intervalSpacing * i, origin.y + TICKLENGTH / 2), 
 			createPoint(origin.x + intervalSpacing * i, origin.y - TICKLENGTH / 2)
@@ -99,11 +89,6 @@ export function drawVerticalAxis(topToBottom: boolean, length: number, max: numb
 	ctx.strokeStyle = STROKECOLOR;
 	
 	// Vertical 
-	// ctx.beginPath();
-	// ctx.moveTo(origin.x, origin.y);
-	// ctx.lineTo(origin.x, origin.y - length);
-	// ctx.closePath();
-	// ctx.stroke();
 	strokeLine(
 		createPoint(origin.x, origin.y), 
 		createPoint(origin.x, origin.y - length)
@@ -117,11 +102,6 @@ export function drawVerticalAxis(topToBottom: boolean, length: number, max: numb
 	
 	let intervalSpacing = length / INTERVALS;
 	for (let i = 1; i <= INTERVALS; i++) {
-		// ctx.beginPath();
-		// ctx.moveTo(origin.x + TICKLENGTH / 2, origin.y - intervalSpacing * i);	
-		// ctx.lineTo(origin.x - TICKLENGTH / 2, origin.y - intervalSpacing * i);
-		// ctx.closePath();
-		// ctx.stroke();
 		strokeLine(
 			createPoint(origin.x + TICKLENGTH / 2, origin.y - intervalSpacing * i), 
 			createPoint(origin.x - TICKLENGTH / 2, origin.y - intervalSpacing * i)
