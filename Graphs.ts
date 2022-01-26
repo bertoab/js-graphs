@@ -173,3 +173,14 @@ export function drawCrossAxis(datum: Point, indexAxis: AxisProps, valueAxis: Axi
 	ctx.closePath();
 	ctx.stroke();
 }
+
+//AUXILIARY
+function strokeLine(start: Point, end: Point) {
+	ctx.beginPath();
+	ctx.moveTo(start.x, start.y);
+	ctx.lineTo(end.x, end.y);
+	ctx.closePath();
+	ctx.stroke();
+}
+
+function createPoint(x: number, y: number): Point { return {x: x, y: y}; }
